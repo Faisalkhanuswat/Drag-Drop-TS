@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragify</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <template id="add-project">
+        <form class="p-6 bg-gray-100 max-w-96 m-auto my-8">
+            <div class="mb-3">
+                <label for="title" class="text-md font-medium">Title</label>
+                <input type="text" name="title" id="title" class="mt-1 border border-gray-500 w-full px-4 py-1 rounded">
+            </div>
+            <div class="mb-3">
+                <label for="desc" class="text-md font-medium">Description</label>
+                <textarea id="desc" name="desc" rows="3"
+                    class="resize-none mt-1 border border-gray-500 w-full px-4 py-1 rounded"></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="people" class="text-md font-medium">People</label>
+                <input type="number" name="people" id="people" min="0"
+                    class="mt-1 border border-gray-500 w-full px-4 py-1 rounded">
+            </div>
+            <button type="submit" class="bg-green-500 px-3 py-1 rounded text-white mt-3 font-medium">Add
+                Project</button>
+        </form>
+    </template>
+    <template id="projects-container">
+        <section class="max-w-96 m-auto my-8">
+            <h2 class="px-6 py-4 text-white font-semibold text-xl"></h2>
+            <ul class="border border-t-0 p-3 grid gap-3"></ul>
+        </section>
+    </template>
+    <template id="single-project">
+        <li class="bg-white shadow-sm/20 py-2 px-3 cursor-move" draggable="true">
+            <h2 class="font-bold text-lg text-orange-500"></h2>
+            <h5 class="font-medium text-sm"></h5>
+            <p></p>
+        </li>
+    </template>
+    <div id="app"></div>
+    <script src="./dist/app.js" defer type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</body>
+
+</html>

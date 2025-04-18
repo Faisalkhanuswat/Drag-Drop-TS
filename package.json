@@ -1,0 +1,11 @@
+{
+  "name": "drag-drop",
+  "version": "1.0.0",
+  "description": "Practice base project in typescript",
+  "main": "app.js",
+  "scripts": {
+    "dev": "tsc --watch"
+  },
+  "author": "Faisa Khan",
+  "license": "ISC"
+}

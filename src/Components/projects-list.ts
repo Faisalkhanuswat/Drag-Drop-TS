@@ -69,5 +69,4 @@ export default class ProjectList extends Component<HTMLDivElement, HTMLElement> 
         const ul = this.element.querySelector('ul') as HTMLUListElement;
         ul.id = `projects-list-${this.type}`;
     }
-
 }

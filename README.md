@@ -1,0 +1,1 @@
+This is a test-driven project in TypeScript with OOP programming.

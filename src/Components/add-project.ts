@@ -1,7 +1,7 @@
-import Component from "./base.js";
-import { validateField } from "../utils/validate.js";
-import { autobind } from "../Decorators/autobind.js";
-import { projectState } from "../States/project-states.js";
+import Component from "./base";
+import { validateField } from "../utils/validate";
+import { autobind } from "../Decorators/autobind";
+import { projectState } from "../States/project-states";
 
 export default class AddProject extends Component<HTMLDivElement, HTMLFormElement> {
 

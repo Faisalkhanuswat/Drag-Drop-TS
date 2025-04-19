@@ -1,6 +1,6 @@
-import Component from "./base.js";
-import { autobind } from "../Decorators/autobind.js";
-import { Draggable } from "../Interfaces/project-interface.js";
+import Component from "./base";
+import { autobind } from "../Decorators/autobind";
+import { Draggable } from "../Interfaces/project-interface";
 
 export default class List extends Component<HTMLUListElement, HTMLLIElement> implements Draggable {
     constructor(private proj: { id: string, title: string, desc: string, people: number }, private hostId: string) {

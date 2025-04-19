@@ -1,5 +1,7 @@
-import AddProject from "./Components/add-project.js";
-import ProjectList from "./Components/projects-list.js";
+import AddProject from "./Components/add-project";
+import ProjectList from "./Components/projects-list";
+
+import "./app.css";
 
 console.log('Drag and Drop Project runnig...');
 
